@@ -24,8 +24,6 @@
     
     .app {}
     
-    .background-image {}
-    
     .header {}
     
     .header__nav {
@@ -70,7 +68,7 @@
     }
     
     .background-image {
-        background-image: url(../images/background.png);
+        background-image: url(./images/background.png);
         height: 100vh;
         position: relative;
         background-position: center;
