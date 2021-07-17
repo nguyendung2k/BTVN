@@ -101,7 +101,10 @@ body {
   border: none;
   border-radius: 60px;
   padding: 12px 67px;
-  transition: ease-out 5s;
+}
+
+.button:hover {
+  opacity: 0.5;
 }
 
 .button--primary {
@@ -432,7 +435,7 @@ body {
   border-radius: 60px;
   padding: 16px 33px;
 }
-/* Contacts */
+/*-------------------------------------------------- Contacts------------------------------------------ */
 
 .section__contacts {
   padding-top: 200px;
@@ -460,15 +463,26 @@ body {
 
 .section__containers {
   display: flex;
-  justify-content: space-between;
+  text-align: center;
+  justify-content: space-around;
   margin-top: 50px;
 }
 
 .section__left {
   display: flex;
+  width: 453px;
+  height: 656px;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-left: 168px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0.1px;
+  border: 0.2px solid #f5f5f5;
+  border-radius: 20px;
+}
+
+.section__left h2 {
+  font-weight: 400;
+  color: black;
 }
 
 .section__left .button--primary {
@@ -487,10 +501,19 @@ body {
 }
 
 .input--contact {
+  display: block;
   outline: none;
-  font-size: 1.4rem;
-  font-weight: 500;
-  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  width: 353px;
+  padding: 10px;
+  border: 1px solid #ebe7e7;
+  border-radius: 20px;
+  background-color: #e8e8e8;
+  color: black;
+}
+
+.input--contact .form-contact {
 }
 
 .section__contacts .fab {
@@ -501,7 +524,7 @@ body {
 .section__right {
   display: flex;
   flex-direction: column;
-  margin-right: 175.77px;
+  justify-content: space-around;
 }
 
 .right__header {
@@ -539,13 +562,7 @@ body {
   margin-bottom: 10px;
 }
 
-.contacts--image {
-  /* display: flex;
-        align-items: center;
-        justify-content: center; */
-  margin-top: 46px;
-}
-/* footer */
+/*--------------------------------- footer----------------------------------------------- */
 
 .footer {
   margin-top: 52px;
@@ -618,10 +635,4 @@ body {
 .fab:hover {
   cursor: pointer;
   color: #2091f9;
-}
-
-.button:hover {
-  box-shadow: inset 250px 0 0 0 #ed8e7c;
-  cursor: pointer;
-  color: #252b42;
 }
